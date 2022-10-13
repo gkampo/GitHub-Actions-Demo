@@ -32,5 +32,5 @@ jobs:
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'webapp-deployv2'
-        publish-profile: ${{ secrets.azureWebAppPublishProfiles }}
+        publish-profile: ${{ secrets.azureWebAppPublishProfile }}
         images: 'gk13081987/testdeploy2:${{ github.sha }}'
